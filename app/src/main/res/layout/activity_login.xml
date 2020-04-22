@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <!--background sesuai dengan keinginan yang anda letakkan pada folder drawable dengan nama background-->
+    <!--gravity digunakan untuk menaruh di tenggah-->
+    <!--orientation digunakan agar komponen tersusun secara Vertikal-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="20sp"/>
+
+    <!--untuk menampilkan text Login dengan warna Hitam (#000) dan style huruf tebal(Bold) dan terletak di tengah dengan ukuran 20sp-->
+
+    <!--TextView digunakan untuk menampilkan teks dalam Android-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="Username"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:hint="Input Username"
+        android:inputType="text" />
+
+    <!--Scrip di atas di gunakan untuk melakukan input text -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="Password"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:hint="Input Password"
+        android:inputType="textPassword" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--LinearLayout disini digunakan agar Button di bawah bisa saling berjajar menyamping -->
+
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="12dp"
+            android:text="Login" />
+
+        <!--Button di atas digunakan agar bisa terhubung dengan Activity Main -->
+        <!--disini terdapat id yang digunakan untuk memanggil komponen ini di java -->
+
+
+        <Button
+            android:id="@+id/buttonRegister"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="12dp"
+            android:text="Register" />
+
+            <!--Button Register di atas di gunakan agar bisa terhubung dengan Register Activity-->
+
+    </LinearLayout>
+
+</LinearLayout>
